@@ -23,6 +23,12 @@ app.use(express.static('public'))
 
 app.use('/',require('./server/route/main'))
 
+app.use('/about',require('./server/route/main'))
+
+
+app.use('/contact',require('./server/route/main'))
+
+
 app.listen(PORT,()=>{
     console.log(`App Listen on Port at  http://localhost:${PORT}`)
 })
